@@ -9,7 +9,10 @@ const Tab = createBottomTabNavigator();
 class MainStacks extends React.Component {
   render() {
     return (
-      <Tab.Navigator initialRouteName={ALERT_SCREEN} tabBar={CustomTab}>
+      <Tab.Navigator
+        initialRouteName={ALERT_SCREEN}
+        tabBar={(props) => <CustomTab {...props} />}
+      >
         {mainRoutes.map((stack) => (
           <Tab.Screen
             key={stack.name}

@@ -1,6 +1,6 @@
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import React from "react";
-import { TouchableOpacity, View, Text } from "react-native";
+import React, { useEffect, useState } from "react";
+import { TouchableOpacity, View, Text, Keyboard } from "react-native";
 import { colors } from "../../theme/colors";
 import { styles } from "./styles/customTab.styles";
 
@@ -9,6 +9,24 @@ export function CustomTab({
   descriptors,
   navigation,
 }: BottomTabBarProps) {
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
+
+  useEffect(() => {
+    const showSubscription = Keyboard.addListener("keyboardDidShow", () => {
+      setKeyboardVisible(true);
+    });
+    const hideSubscription = Keyboard.addListener("keyboardDidHide", () => {
+      setKeyboardVisible(false);
+    });
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
+
+  if (keyboardVisible) return null;
+
   return (
     <View style={styles.root}>
       {state.routes.map((route, index) => {

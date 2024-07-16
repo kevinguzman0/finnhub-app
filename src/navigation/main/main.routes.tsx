@@ -1,6 +1,6 @@
 import AlertScreen from "../../screens/Alert/alert.screen";
-import WatchListScreen from "../../screens/graphs.screen";
-import GraphsScreen from "../../screens/watchlist.screen";
+import WatchListScreen from "../../screens/WatchList/watchlist.screen";
+import GraphsScreen from "../../screens/graphs.screen";
 
 import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
