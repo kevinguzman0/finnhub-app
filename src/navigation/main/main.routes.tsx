@@ -1,4 +1,4 @@
-import AlertScreen from "../../screens/alert.screen";
+import AlertScreen from "../../screens/Alert/alert.screen";
 import WatchListScreen from "../../screens/graphs.screen";
 import GraphsScreen from "../../screens/watchlist.screen";
 

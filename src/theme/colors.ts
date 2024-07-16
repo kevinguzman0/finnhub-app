@@ -5,7 +5,7 @@ export const palette = {
   greenLight: "#ecf5ee",
   greenLightHover: "#e2f0e6",
   greenLighter: "#C3E0CA",
-  greenNormal: "#45a348",
+  greenNormal: "#5cb43c",
 
   //grey
   greyLight: "#fafafb",
