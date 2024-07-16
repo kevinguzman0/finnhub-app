@@ -3,7 +3,7 @@ import { colors } from "../../../theme/colors";
 
 export const styles = StyleSheet.create({
   containerStock: {
-    backgroundColor: "#000",
+    backgroundColor: colors("blackNormal"),
     width: "45%",
     borderRadius: 10,
     marginVertical: 5,

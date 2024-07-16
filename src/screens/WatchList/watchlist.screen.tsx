@@ -45,6 +45,7 @@ const WatchListScreen = () => {
         numColumns={2}
         style={styles.containerFlatList}
         columnWrapperStyle={styles.centerItems}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
