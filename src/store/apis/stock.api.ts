@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { DataDropDownStock } from "../../types/stock.type";
 import adapterResponseStock from "../../adapters/stockResponse.adapter";
 import { setStockData } from "../slices/stock.slice";
-import { baseUrl, token } from "../../ constants/api";
+import { baseUrl, token } from "../../constants/api";
 
 // Define a service using a base URL and expected endpoints
 export const stockApi = createApi({

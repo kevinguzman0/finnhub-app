@@ -3,7 +3,7 @@ import { FlatList, StyleSheet, View } from "react-native";
 import { colors } from "../../theme/colors";
 import { hp } from "../../utilities/responsive";
 import BoxStock from "./components/boxStock";
-import { data } from "../../ constants/stocks";
+import { data } from "../../constants/stocks";
 
 const WatchListScreen = () => {
   // var ws = React.useRef(

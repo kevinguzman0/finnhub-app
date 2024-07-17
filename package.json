@@ -15,6 +15,7 @@
     "test:badges": "npm run test:ci  && jest-coverage-badges --input coverage/coverage-summary.json --output __badges__"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.24.0",
     "@react-native-picker/picker": "^2.7.7",
     "@react-navigation/bottom-tabs": "^6.6.0",
     "@react-navigation/native": "^6.1.17",
@@ -52,6 +53,7 @@
     "jest-coverage-badges": "^1.1.2",
     "jest-expo": "^51.0.3",
     "prettier": "^3.3.3",
+    "reactotron-react-native": "^5.1.7",
     "ts-jest": "^29.2.2",
     "typescript": "^5.1.3"
   },

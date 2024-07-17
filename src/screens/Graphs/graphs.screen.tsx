@@ -3,7 +3,7 @@ import { FlatList, StyleSheet, View } from "react-native";
 import { colors } from "../../theme/colors";
 import { hp } from "../../utilities/responsive";
 import { Chart } from "./components/chart";
-import { data } from "../../ constants/charts";
+import { data } from "../../constants/charts";
 
 const GraphsScreen = () => {
   return (
