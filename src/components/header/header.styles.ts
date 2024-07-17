@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../theme/colors";
-import { hp } from "../../../utilities/responsive";
+import { colors } from "../../theme/colors";
+import { hp } from "../../utilities/responsive";
 
 export const styles = StyleSheet.create({
   container: {
@@ -14,5 +14,17 @@ export const styles = StyleSheet.create({
   image: {
     width: 300,
     height: 200,
+  },
+  title: {
+    color: colors("greenNormal"),
+    fontSize: 30,
+    fontWeight: "500",
+  },
+  marginTop: {
+    marginTop: 10,
+  },
+  textGreen: {
+    color: colors("greenNormal"),
+    fontWeight: "bold",
   },
 });

@@ -1,16 +1,27 @@
 import { configureStore } from "@reduxjs/toolkit";
-import stockReducer from "./slices/stock.slice";
 import { stockApi } from "./apis/stock.api";
 import { setupListeners } from "@reduxjs/toolkit/query";
+import storage from "@react-native-async-storage/async-storage";
+import { persistReducer } from "redux-persist";
+import rootReducer from "./rootReducer";
+import persistStore from "redux-persist/es/persistStore";
+
+const persistConfig = {
+  key: "root",
+  storage,
+};
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
-  reducer: {
-    stock: stockReducer,
-    [stockApi.reducerPath]: stockApi.reducer,
-  },
+  reducer: persistedReducer,
+  devTools: process.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(stockApi.middleware),
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat(stockApi.middleware),
 });
+
+export const persistor = persistStore(store);
 
 setupListeners(store.dispatch);
 

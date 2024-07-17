@@ -13,6 +13,10 @@ export const palette = {
   blackDarker: "#000000",
   blackNormal: "#2f2e2e",
 
+  //red
+  redNormal: "#B3261E",
+  redLight: "#FFC0CB",
+
   //white
   whiteNormal: "#FFFFFF",
 } as const;

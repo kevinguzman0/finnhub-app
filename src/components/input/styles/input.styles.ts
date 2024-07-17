@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { wp } from "../../../utilities/responsive";
 
 export const styles = StyleSheet.create({
   input: {
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
     color: "#000", // Texto negro
     padding: 10,
     height: 50,
-    width: "100%",
+    width: wp(90),
     fontWeight: "bold",
     borderRadius: 5,
   },

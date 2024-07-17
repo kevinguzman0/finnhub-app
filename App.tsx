@@ -1,7 +1,8 @@
 import { Provider } from "react-redux";
 import RootNavigator from "./src/navigation/root-navigator";
-import { store } from "./src/store/store";
+import { persistor, store } from "./src/store/store";
 import Toast from "react-native-toast-message";
+import { PersistGate } from "redux-persist/integration/react";
 
 if (__DEV__) {
   require("./ReactotronConfig");
@@ -10,8 +11,10 @@ if (__DEV__) {
 export default function App() {
   return (
     <Provider store={store}>
-      <RootNavigator />
-      <Toast />
+      <PersistGate loading={null} persistor={persistor}>
+        <RootNavigator />
+        <Toast />
+      </PersistGate>
     </Provider>
   );
 }

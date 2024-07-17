@@ -7,7 +7,7 @@ import { baseUrl, token } from "../../constants/api";
 
 // Define a service using a base URL and expected endpoints
 export const stockApi = createApi({
-  reducerPath: "pokemonApi",
+  reducerPath: "stockApi",
   baseQuery: fetchBaseQuery({
     baseUrl,
     headers: {
