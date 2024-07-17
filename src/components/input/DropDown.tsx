@@ -3,10 +3,15 @@ import { Dropdown } from "react-native-element-dropdown";
 import { styles } from "./styles/dropdown.styles";
 
 interface DropDownProps {
-  data: Array<{ label: string; value: string }>;
+  data: DataProps[];
   value: string;
   onChange: (item: any) => void;
 }
+
+type DataProps = {
+  label: string;
+  value: string;
+};
 
 export const DropDownCustom: React.FC<DropDownProps> = ({
   data,

@@ -12,6 +12,8 @@ export const data: ChartType[] = [
       { value: 60, dataPointText: "60" },
       { value: 70, dataPointText: "70" },
       { value: 80, dataPointText: "80" },
+      { value: 90, dataPointText: "90" },
+      { value: 40, dataPointText: "40" },
     ],
   },
   {
@@ -25,6 +27,7 @@ export const data: ChartType[] = [
       { value: 70, dataPointText: "70" },
       { value: 80, dataPointText: "80" },
       { value: 90, dataPointText: "90" },
+      { value: 40, dataPointText: "40" },
     ],
   },
   {
@@ -38,6 +41,7 @@ export const data: ChartType[] = [
       { value: 80, dataPointText: "80" },
       { value: 90, dataPointText: "90" },
       { value: 100, dataPointText: "100" },
+      { value: 40, dataPointText: "40" },
     ],
   },
   {

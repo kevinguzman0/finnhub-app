@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { DataDropDownStock, Stock } from "../types/stock.type";
 
 const adapterResponseStock = (

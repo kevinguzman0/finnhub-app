@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   placeholderStyle: {
     fontSize: 14,
-    color: colors("grayDarker2"),
+    color: colors("greyDarker"),
     fontWeight: "bold",
   },
   textStyle: {

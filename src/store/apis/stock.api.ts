@@ -1,6 +1,6 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { DataDropDownStock, Stock } from "../../types/stock.type";
+import { DataDropDownStock } from "../../types/stock.type";
 import adapterResponseStock from "../../adapters/stockResponse.adapter";
 import { setStockData } from "../slices/stock.slice";
 import { baseUrl, token } from "../../ constants/api";
@@ -21,7 +21,7 @@ export const stockApi = createApi({
       async onQueryStarted({ dispatch, queryFulfilled }) {
         try {
           const res = await queryFulfilled;
-          dispatch(setStockData(res.data)); //TODO: add types
+          dispatch(setStockData(res.data));
         } catch (resError) {
           console.log("Error", resError);
         }
